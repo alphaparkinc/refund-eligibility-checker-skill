@@ -1,0 +1,50 @@
+{
+  "name": "refund-eligibility-checker-skill",
+  "version": "1.0.0",
+  "description": "Evaluate return/refund eligibility based on policy constraints (days elapsed, product category, and item condition).",
+  "author": "alphaparkinc",
+  "category": "support",
+  "tags": [
+    "returns",
+    "refunds",
+    "policy",
+    "eligibility",
+    "support"
+  ],
+  "inputs": {
+    "purchase_date": {
+      "type": "string",
+      "description": "Date of order in ISO YYYY-MM-DD format."
+    },
+    "claim_date": {
+      "type": "string",
+      "description": "Date claim submitted in ISO YYYY-MM-DD format."
+    },
+    "item_condition": {
+      "type": "string",
+      "enum": [
+        "unopened",
+        "opened_unused",
+        "opened_used",
+        "damaged"
+      ],
+      "description": "Product condition upon return arrival."
+    },
+    "product_category": {
+      "type": "string",
+      "description": "Optional category (e.g. cosmetics/perishables may be exempt)."
+    }
+  },
+  "outputs": {
+    "status": {
+      "type": "string",
+      "description": "approved / denied / manual_review."
+    },
+    "reason": {
+      "type": "string",
+      "description": "Reasoning for the policy decision."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
