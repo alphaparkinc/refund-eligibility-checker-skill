@@ -1,4 +1,4 @@
-# refund-eligibility-checker-skill
+# genpark-refund-eligibility-checker-skill
 
 > **GenPark AI Agent Skill** -- Returns & Refund eligibility rule checker.
 
