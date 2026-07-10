@@ -1,8 +1,8 @@
 {
   "name": "refund-eligibility-checker-skill",
   "version": "1.0.0",
-  "description": "Evaluate return/refund eligibility based on policy constraints (days elapsed, product category, and item condition).",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Evaluate return/refund eligibility based on policy constraints (days elapsed, product category, and item condition).",
+  "author": "genpark",
   "category": "support",
   "tags": [
     "returns",
